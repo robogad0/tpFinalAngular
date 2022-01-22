@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: rgb(249, 242, 237);
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Spline Sans', sans-serif;
+     animation: fadeInAnimation ease 2s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forward;  
+     background-image: url(wormz.png);
+}
+
+ @keyframes fadeInAnimation{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+} 
+
+@media (max-width: 575.98px) {
+   
+    #logoPanaderia {
+        width: 100px;
+    }
+    #plusTrabajo{
+        width: 15px;
+        height: 15px;
+    }
+    
+
+    .fotoPersonal{
+        position: absolute;
+        top: 190px;
+        left: 18px;
+        background-color: transparent;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100px;
+        height: 30px;
+    }
+
+    
+}

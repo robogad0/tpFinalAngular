@@ -1,0 +1,44 @@
+
+<br>
+<h1 class="text-center" id="educacion" (click) = toggle()>
+    <a routerLink="/educacion" routerLinkActive="active current">educacion</a>
+</h1><br>
+
+<div class="container-sm d-flex justify-content-center" *ngIf = "!visible" @fade>
+
+    <table style="width: 80%;" id="tablaEducacion">
+        <tr>
+            <th style="width: 20%"></th>
+            <th style="width: 60%;"></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td><h5>egresada en el año 2019 en la Escuela Superior de Comercio Libertador Gral. San Martín,
+                escuela perteneciente a la Universidad Nacional de Rosario, con Bachiller en Economía y Administración
+            </h5>
+            </td>
+        </tr>    
+        <tr>
+            <td><img src="./assets/logoUnr.png"
+                 alt="logoUNR" width="160px" style="margin-left: auto;"></td>
+            <td><h5>estudiante de Psicología en la Universidad Nacional de Rosario</h5>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><h5>certifiación en curso de Preceptoría Nivel I, dictado por la Facultad de Derecho,
+                perteneciente a la Universidad Nacional de Rosario en el año 2021</h5>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="rounded rounded-3"
+                src="https://test.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1638311812/APLogo-20-20.png" 
+                alt="ArgProgLogo" width="120px" style="background-color: grey;"
+                >
+            </td>
+            <td><h5>certificación en la primera etapa del Plan Argentina Programa #SéProgramar, en el año 2021</h5>
+            </td>
+        </tr>
+    </table> 
+    </div><br>
