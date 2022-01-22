@@ -1,0 +1,33 @@
+<br>
+<h1 class="text-center" id="expLaboral"
+(click) = toggle() >
+<a routerLink="/exp-laboral" routerLinkActive="active current">experiencia laboral</a>
+</h1><br>
+
+      <div class="container-sm d-flex justify-content-center" *ngIf = "!visible" @fade>
+          <table style="width: 80%;" id="tablaExpLaboral">
+            <tr>
+                <th id="header1ExpLaboral" style="width: 25%;"></th>
+                <th id="header2ExpLaboral"></th>
+            </tr>
+        <tr><td><img src="https://i0.wp.com/lapasteleriarosario.online/wp-content/uploads/2021/06/La-Pasteleria-Rosario-dulce-salado-y-mas.-La-mejor-relacion-precio-calidad-1-e1623538614313.png?fit=150%2C140&ssl=1"
+            alt="logoPanaderia" id="logoPanaderia" width="130px"></td>
+
+            <td><h5>atención al público en Panadería "La Pastelería", desde diciembre del año 2019 a diciembre del año 2020
+            </h5></td>
+            <td><svg id="plusTrabajo" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"
+                (click)= toggle2()>
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+              </svg>
+            
+                <ul id="tareasTrabajo" *ngIf = "!visible2" @fade>
+                    <li style="list-style-type: none">descripción de tareas del puesto:</li>
+                    <li>atención a clientes en el local</li>
+                    <li>tomar y armar pedidos</li>
+                    <li>mantenimiento y limpieza general del local</li>
+                    <li>manejo de la caja</li>
+            </ul>
+            </td>
+        </tr>
+    </table>
+    </div>
